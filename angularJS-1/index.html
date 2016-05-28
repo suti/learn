@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh" ng-app>
 <head>
     <meta charset="UTF-8">
     <title>learn-angular-1</title>
@@ -7,10 +7,21 @@
     <script>
 
     </script>
+    <style>
+
+    </style>
 </head>
-<body  ng-app>
-    <div class="t">
-        {{'hello'+'world'}}
+<body>
+    <!--<div class="t" ng-bind="'hello'+'world'">-->
+    </div>
+    <div>
+        <input type="text" ng-model="input">
+        <div class="" style="color: {{input}}">颜色是{{input}}</div>
+        <ul>
+            <li ng-repeat="i in [0,1,2,3]">
+                {{i}}
+            </li>
+        </ul>
     </div>
 </body>
 </html>
